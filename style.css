@@ -36,6 +36,7 @@ body {
     color: white;
     font-family: apple;
     font-weight: 300;
+
 }
 
 #center {
@@ -52,31 +53,205 @@ body {
     color: white;
     font-size: 50px;
     font-family: apple;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #center h5 {
     color: white;
     font-family: apple;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px; /* increased gap between the two buttons */
+}
+
+#btn button {
+    margin-top: 15px;
+    padding: 15px 28px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn .learn {
+  background-color: #0071e3;
+  color: white;
+}
+
+#btn .learn:hover {
+  background-color: #005bb5;
+}
+
+#btn .buy {
+  background-color: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+}
+
+#btn .buy:hover {
+  background-color: #0071e3;
+  color: white;
+}
+
+#shero {
+    height: 90%;
+    width: 100%;
+    background-image: url(./iPhone\ Air.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 58px;
+}
+
+#shero h1 {
+    color: black;
+    font-size: 50px;
+    font-family: apple;
+    font-weight: 600;
+}
+
+#shero h5 {
+    color: black;
+    font-family: apple;
     font-size: 25px;
     font-weight: 200;
 }
 
-#links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 18px;
+#prime {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    height: 2000px;
+    margin: auto;
 }
 
-#links button {
-    background-color: royalblue;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
+/* ==== Each Card ==== */
+#prime > div {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#prime > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ==== Headings ==== */
+#prime h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#prime h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #141414;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* specific lighter styling for the series label only */
+#card2 h1 .series {
+    font-size: 28px;
     font-weight: 300;
+    color: #111111;
 }
 
+#card3 h1 {
+    color: #fff;
+}
+
+#card3 h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#card5 h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#card6 h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+card6 h1 {
+    color: #231F20;
+}
+
+
+
+/* ==== Specific Background Images ==== */
+#card1 {
+  background-image: url(./promo_iphone_17__bhofuohbsu3m_medium.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 70px;
+}
+
+#card2 {
+    background-image: url(./promo_apple_watch_series_11__b63hxviqvonm_medium.jpg);
+    /* move the image slightly upward */
+    background-position: center -20px;
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+}
+
+#card3 {
+    background-image: url(./promo_edu__efkxh2h1luoi_medium.jpg);
+    /* align background to bottom so image appears lower in the card */
+    background-position: center bottom;
+    background-size: cover;
+    position: absolute;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* push h1, h5, buttons toward the bottom */
+    padding: 60px 20px 60px; /* more bottom padding to create breathing room */
+}
+
+#card4 {
+    background-image: url(./promo_airpodspro_3__f6xmza7bglei_medium.jpg);
+    /* move the image slightly upward */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+}
+
+#card5 {
+    background-image: url(./promo_macbook_air__fqowrtnxewqe_medium.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 70px;
+}
+
+#card6 {
+    background-image: url(./promo_iphone_tradein__bugw15ka691e_medium.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+}
